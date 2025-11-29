@@ -1,0 +1,19 @@
+{
+	"name": "Kaggle Environment",
+	"image": "mcr.microsoft.com/devcontainers/python:3.10",
+	// ↓ ここに pandas-datareader を追加しました
+	"postCreateCommand": "pip install --no-cache-dir pandas pandas-datareader numpy scikit-learn matplotlib seaborn jupyter lightgbm xgboost catboost ipykernel torch torchvision torchaudio",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"GitHub.copilot"
+			]
+		}
+	},
+	"runArgs": [
+		"--gpus",
+		"all"
+	]
+}

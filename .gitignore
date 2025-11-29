@@ -1,0 +1,74 @@
+# --------------------------------------------
+# Kaggle Workspace Ignore Rules
+# --------------------------------------------
+
+# ---- Kaggle 本番コンペ用コード（絶対に公開しない） ----
+Kaggle_competition/
+Kaggle_competition/*
+
+# ---- Python キャッシュ ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ---- Jupyter Notebook のチェックポイント ----
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ---- 環境ファイル / 秘密情報 ----
+.env
+*.env
+*.secret.json
+secrets.json
+config.json
+credentials.json
+.token
+*.key
+
+# ---- VSCode / devcontainer のローカルキャッシュ ----
+.vscode/
+!.vscode/settings.json   # 必要なら設定だけ残す
+.devcontainer/.cache/
+
+# ---- OS 由来のファイル ----
+.DS_Store
+Thumbs.db
+
+# ---- Python 仮想環境（ホスト側に作った場合）----
+venv/
+.env/
+.venv/
+env/
+
+# ---- 大型データ（Kaggle datasets や生成物） ----
+*.csv
+*.tsv
+*.zip
+*.tar
+*.tar.gz
+*.hdf5
+*.h5
+*.pkl
+*.joblib
+*.npy
+*.npz
+data/
+datasets/
+output/
+logs/
+models/
+results/
+
+# ---- プロット画像や一時出力 ----
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.pdf
+
+# ---- Notebook 実行で生成されがちな一時ファイル ----
+*.out
+*.tmp
+*.cache/
